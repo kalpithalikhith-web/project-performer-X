@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performer X</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101018;
+      color: #f5f5f7;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #181823;
+    }
+
+    .logo { font-size: 1.4rem; font-weight: bold; color: #b49cff; }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover { color: #b49cff; }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      padding: 48px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #27213c, #171722);
+    }
+
+    .tag {
+      color: #b49cff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+    }
+
+    h1 { font-size: clamp(2.5rem, 8vw, 5rem); margin: 12px 0; }
+    .bio { max-width: 600px; color: #c8c6d2; line-height: 1.7; }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: #9b7bff;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      padding: 22px;
+      border-radius: 14px;
+      background: #1b1b27;
+      border: 1px solid #30303c;
+    }
+
+    .card strong { display: block; font-size: 1.6rem; color: #b49cff; }
+    .card span { color: #aaa8b4; }
+
+    section { margin-top: 48px; }
+    section h2 { font-size: 1.8rem; }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: #aaa8b4;
+      border-top: 1px solid #30303c;
+    }
+
+    @media (max-width: 600px) {
+      header { align-items: flex-start; gap: 14px; flex-direction: column; }
+      nav a { margin: 0 14px 0 0; }
+      .hero { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PERFORMER X</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="tag">Artist · Performer · Creator</div>
+      <h1>Performer X</h1>
+      <p class="bio">
+        Bringing energy, creativity, and unforgettable moments to every stage.
+        Explore recent highlights and get in touch for bookings and collaborations.
+      </p>
+      <a class="button" href="mailto:hello@example.com">Book Performer X</a>
+    </section>
+
+    <section id="highlights">
+      <h2>At a glance</h2>
+      <div class="stats">
+        <div class="card"><strong>100+</strong><span>Live performances</span></div>
+        <div class="card"><strong>25K</strong><span>Fans and followers</span></div>
+        <div class="card"><strong>10</strong><span>Years performing</span></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let’s create something memorable</h2>
+      <p class="bio">For bookings, appearances, or collaboration inquiries, send a message.</p>
+      <a class="button" href="mailto:hello@example.com">Get in touch</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Performer X. All rights reserved.</footer>
+</body>
+</html>
